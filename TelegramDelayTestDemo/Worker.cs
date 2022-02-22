@@ -12,7 +12,7 @@ public class Worker : BackgroundService
     {
         Console.WriteLine("started");
 
-        _bot = new TelegramBotClient("1468805234:AAEm-QRYUP_WTRaiol5VyvixPgdoHhRNbfY");
+        _bot = new TelegramBotClient("imNotToken");
         ReceiverOptions receiverOptions = new() { AllowedUpdates = { } };
         _bot.StartReceiving(HandleUpdateAsync, HandleErrorAsync, receiverOptions, cancellationToken);
 
